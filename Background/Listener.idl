@@ -1,0 +1,8 @@
+namespace Background
+{
+    [default_interface]
+    runtimeclass Listener : Windows.ApplicationModel.Background.IBackgroundTask
+    {
+        Listener();
+    }
+}

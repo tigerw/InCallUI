@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InCallUI", "InCallUI\InCallUI.vcxproj", "{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Background", "Background\Background.vcxproj", "{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Debug|ARM.ActiveCfg = Debug|ARM
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Debug|ARM.Build.0 = Debug|ARM
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Debug|ARM.Deploy.0 = Debug|ARM
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Debug|ARM64.Build.0 = Debug|ARM64
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Debug|x64.ActiveCfg = Debug|x64
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Debug|x64.Build.0 = Debug|x64
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Debug|x64.Deploy.0 = Debug|x64
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Debug|x86.ActiveCfg = Debug|Win32
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Debug|x86.Build.0 = Debug|Win32
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Debug|x86.Deploy.0 = Debug|Win32
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Release|ARM.ActiveCfg = Release|ARM
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Release|ARM.Build.0 = Release|ARM
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Release|ARM.Deploy.0 = Release|ARM
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Release|ARM64.ActiveCfg = Release|ARM64
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Release|ARM64.Build.0 = Release|ARM64
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Release|ARM64.Deploy.0 = Release|ARM64
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Release|x64.ActiveCfg = Release|x64
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Release|x64.Build.0 = Release|x64
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Release|x64.Deploy.0 = Release|x64
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Release|x86.ActiveCfg = Release|Win32
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Release|x86.Build.0 = Release|Win32
+		{1EE0230C-F9DD-4FC8-BEE1-098A3A7BD29F}.Release|x86.Deploy.0 = Release|Win32
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Debug|ARM.ActiveCfg = Debug|ARM
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Debug|ARM.Build.0 = Debug|ARM
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Debug|ARM64.Build.0 = Debug|ARM64
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Debug|x64.ActiveCfg = Debug|x64
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Debug|x64.Build.0 = Debug|x64
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Debug|x86.ActiveCfg = Debug|Win32
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Debug|x86.Build.0 = Debug|Win32
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Release|ARM.ActiveCfg = Release|ARM
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Release|ARM.Build.0 = Release|ARM
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Release|ARM64.ActiveCfg = Release|ARM64
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Release|ARM64.Build.0 = Release|ARM64
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Release|x64.ActiveCfg = Release|x64
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Release|x64.Build.0 = Release|x64
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Release|x86.ActiveCfg = Release|Win32
+		{34F3A09D-6A90-4D75-8D41-94A7DA61AE73}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25E844CA-1A85-48AD-A1DE-85BC6025F5E2}
+	EndGlobalSection
+EndGlobal

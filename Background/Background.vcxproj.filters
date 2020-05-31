@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Handler.cpp" />
+    <ClCompile Include="Installer.cpp" />
+    <ClCompile Include="Listener.cpp" />
+    <ClCompile Include="Proximity.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Background.h" />
+    <ClInclude Include="Handler.h" />
+    <ClInclude Include="PhoneOm.h" />
+    <ClInclude Include="Installer.h" />
+    <ClInclude Include="Listener.h" />
+    <ClInclude Include="Proximity.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="Listener.idl" />
+    <Midl Include="Installer.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Exports.def" />
+  </ItemGroup>
+</Project>

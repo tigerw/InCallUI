@@ -1,0 +1,8 @@
+namespace Background
+{
+    [default_interface]
+    runtimeclass Installer : Windows.ApplicationModel.Background.IBackgroundTask
+    {
+        Installer();
+    }
+}

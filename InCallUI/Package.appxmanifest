@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap mp rescap">
+  <Identity Name="4d3396aa-48af-4b03-86c0-2c7cb0902447" Publisher="CN=ziwei" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="4d3396aa-48af-4b03-86c0-2c7cb0902447" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>In-Call UI</DisplayName>
+    <PublisherDisplayName>ziwei</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="InCallUI.App">
+      <uap:VisualElements DisplayName="In-Call UI" Description="Provides in-call controls for Windows." Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:LockScreen Notification="badge" BadgeLogo="Assets\Badge.png" />
+      </uap:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="Background.Listener">
+          <BackgroundTasks>
+            <uap:Task Type="phoneCall" />
+          </BackgroundTasks>
+        </Extension>
+        <Extension Category="windows.preInstalledConfigTask" EntryPoint="Background.Installer" />
+        <Extension Category="windows.updateTask" EntryPoint="Background.Installer" />
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <uap:Capability Name="contacts" />
+    <uap:Capability Name="phoneCall" />
+    <rescap:Capability Name="phoneCallSystem" />
+    <rescap:Capability Name="phoneCallHistorySystem" />
+    <rescap:Capability Name="extendedBackgroundTaskTime" />
+  </Capabilities>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>Background.dll</Path>
+        <ActivatableClass ActivatableClassId="Background.Installer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Background.Listener" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+</Package>
